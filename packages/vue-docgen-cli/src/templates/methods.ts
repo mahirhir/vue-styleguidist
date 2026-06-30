@@ -31,7 +31,7 @@ ${subComponent ? '#' : ''}#### Return
 
   | Type        | Description  |
   | ------------- | -------------|
-  | ${t} | ${d} |
+  | ${mdclean(t)} | ${mdclean(d)} |
   `
 }
 
