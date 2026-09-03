@@ -24,7 +24,7 @@ ${subComponent ? '#' : ''}#### Params
 const returnsTemplate = (ret: Param, subComponent: boolean) => {
 	const p = ret
 	const t = p.type && p.type.name ? p.type.name : ''
-	const d = p.description ? p.description : ''
+	const d = typeof p.description === 'string' ? p.description : ''
 
 	return `
 ${subComponent ? '#' : ''}#### Return
