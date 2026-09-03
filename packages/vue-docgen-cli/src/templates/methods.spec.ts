@@ -24,4 +24,19 @@ describe('methods', () => {
 		] as any)
 		expect(md).toContain('| value | string \\| number |')
 	})
+
+	it('does not leak a non-string return description into the table', () => {
+		// Param['description'] is string | boolean. The params table drops a
+		// non-string with a typeof guard; the return table did not, and mdclean's
+		// own runtime fallback stringified it, so the column printed "true".
+		const md = methods([
+			{
+				name: 'resolve',
+				description: '',
+				returns: { type: { name: 'string' }, description: true }
+			}
+		] as any)
+		expect(md).toContain('| string |  |')
+		expect(md).not.toContain('true')
+	})
 })
