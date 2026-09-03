@@ -1,3 +1,15 @@
+## ⚠️ This project is archived
+
+I haven't seriously worked on vue-styleguidist in the past 4 years. Parental and professional duties tend to take a lot of my time, and this project deserves more attention than I can give it. So I've decided to archive it.
+
+If you have a real understanding of the field, coupled with a need for this product, get in touch with me on Mastodon and make your case. I will happily hand over the keys to a trusted maintainer.
+
+Alternatives are legion, so you should not be left alone:
+
+- [Storybook Docs](https://storybook.js.org/docs/writing-docs/introduction)
+- [Histoire](https://histoire.dev/)
+- Pure Astro websites
+
 <div align="center" markdown="1" style="text-align:center">
     <img src="https://raw.githubusercontent.com/vue-styleguidist/vue-styleguidist/dev/assets/logo-withtext.png" alt="Vue Styleguidist" width="400">
 
